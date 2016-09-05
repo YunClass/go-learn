@@ -4,7 +4,11 @@ package main
 //引入多个包
 import (
 	"conf"
+	"control"
 	"fmt"
+	"point"
+	"structObject"
+	"time"
 )
 
 //定义多个变量
@@ -33,9 +37,9 @@ func main() {
 	fmt.Println(g, h)
 
 	const j = "1111%"
-	fmt.Println(j)
-
+	//const j := 11  //常量不能使用 :=
 	//j = "222" 常量不能重新赋值
+	fmt.Println(j)
 
 	//类型转换
 	var k int = 12
@@ -43,4 +47,20 @@ func main() {
 	var l float32 = float32(k)
 	fmt.Println(l)
 
+	//类型自动推导
+	m := 11.11
+	fmt.Printf("m is of type %T\n", m)
+
+	fmt.Println(time.Now())
+
+	//控制语句
+	control.SwitchControl()
+	control.DeferControl()
+
+	//指指针
+	point.Point()
+
+	//结构体
+	structObject.EchoPerson()
+	structObject.StructGrammar()
 }
