@@ -3,9 +3,14 @@ package main
 
 //引入多个包
 import (
+	"arrayLearn"
 	"conf"
 	"control"
 	"fmt"
+	"function"
+	"interfaces"
+	"method"
+	"myError"
 	"point"
 	"structObject"
 	"time"
@@ -63,4 +68,24 @@ func main() {
 	//结构体
 	structObject.EchoPerson()
 	structObject.StructGrammar()
+
+	//数组
+	arrayLearn.Array()
+	arrayLearn.Slice()
+	arrayLearn.Map()
+
+	//函数
+	pos := function.Adder()
+	fmt.Println(pos) //内存地址
+	fmt.Println(pos(1))
+
+	//方法
+	method.Method()
+
+	//接口
+	interfaces.Interfaces()
+
+	//错误
+	myError.PrintError()
+
 }

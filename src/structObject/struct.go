@@ -31,8 +31,8 @@ func StructGrammar() {
 		c = Person{}
 		p = &Person{"王五", 20}
 	)
-
-	fmt.Println(a, b, c, p)
+	fmt.Println("-----")
+	fmt.Println(a.name, b, c, p)
 	//{张三 10} {李四 0} { 0} &{王五 20} p返回一个指向结构体的指针
 
 }
