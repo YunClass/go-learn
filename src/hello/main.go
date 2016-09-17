@@ -4,6 +4,7 @@ package main
 //引入多个包
 import (
 	"arrayLearn"
+	"concurrent"
 	"conf"
 	"control"
 	"fmt"
@@ -87,5 +88,12 @@ func main() {
 
 	//错误
 	myError.PrintError()
+
+	//web http
+	//WebTest.HelloWeb()
+
+	//concurrent
+	go concurrent.Say("hello")
+	concurrent.Say("world")
 
 }
